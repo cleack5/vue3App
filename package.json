@@ -11,7 +11,7 @@
     "build_uat": "vite build --mode uat",
     "build_prd": "vite build --mode prd",
     "serve": "vite preview",
-    "lint:script": "eslint --ext .ts,vue --ignore-path .gitignore ."
+    "lint:script": "eslint --ext vue --ignore-path .gitignore ."
   },
   "dependencies": {
     "vue": "^3.0.5"
