@@ -28,7 +28,7 @@ Done. Now run:
 }
 ```
 
-## 添加less支持
+## 添加 less 支持
 
 由于 Vite 的目标仅为现代浏览器，因此建议使用原生 CSS 变量和实现 CSSWG 草案的 PostCSS 插件（例如 postcss-nesting）来编写简单的、符合未来标准的 CSS。
 
@@ -64,3 +64,11 @@ vite build --mode dev
 
 为了使应用实现预期行为，我们还需要一个 .env.dev 文件。
 
+## 代码检查与格式化
+
+参考资料：https://miyauchi.dev/posts/vite-vue3-typescript/
+
+```bash
+npm i -D eslint eslint-plugin-vue @vue/eslint-config-typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
+npm i -D prettier eslint-plugin-prettier @vue/eslint-config-prettier
+```
