@@ -2,8 +2,14 @@
   "name": "vue3app",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "vite --mode dev",
+    "sit": "vite --mode sit",
+    "uat": "vite --mode uat",
+    "prd": "vite --mode prd",
+    "build_dev": "vite build --mode dev",
+    "build_sit": "vite build --mode sit",
+    "build_uat": "vite build --mode uat",
+    "build_prd": "vite build --mode prd",
     "serve": "vite preview"
   },
   "dependencies": {

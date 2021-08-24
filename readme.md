@@ -44,3 +44,23 @@ npm install -D less
 # .styl and .stylus
 npm install -D stylus
 ```
+
+## 环境变量
+
+默认情况下，开发服务器 (serve 命令) 运行在 development (开发) 模式，而 build 命令运行在 production (生产) 模式。
+
+这意味着当执行 vite build 时，它会自动加载 .env.production 中可能存在的环境变量：
+
+```bash
+# .env.production
+VITE_APP_TITLE=My App
+```
+
+你可以通过传递 --mode 选项标志来覆盖命令使用的默认模式。例如，如果你想为我们假设的 dev 模式构建应用：
+
+```bash
+vite build --mode dev
+```
+
+为了使应用实现预期行为，我们还需要一个 .env.dev 文件。
+
