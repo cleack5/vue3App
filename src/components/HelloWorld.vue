@@ -18,18 +18,22 @@
   </p>
 </template>
 
-<script setup>
-import { defineProps, reactive } from 'vue'
+<script setup lang="ts">
+  import { reactive } from 'vue'
 
-defineProps({
-  msg: String
-})
+  defineProps({
+    msg: {
+      type: String,
+      // default: '',
+      required: true,
+    },
+  })
 
-const state = reactive({ count: 0 })
+  const state = reactive({ count: 0 })
 </script>
 
 <style scoped>
-a {
-  color: #42b983;
-}
+  a {
+    color: #42b983;
+  }
 </style>
