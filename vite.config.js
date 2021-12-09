@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import WindiCSS from 'vite-plugin-windicss'
 import { resolve } from 'path'
 
 // https://vitejs.dev/config/
@@ -26,7 +27,7 @@ export default defineConfig(({ command, mode }) => {
         '@': resolve(__dirname, 'src'),
       },
     },
-    plugins: [vue()],
+    plugins: [vue(), WindiCSS()],
     server: {
       proxy: {
         // 字符串简写写法
