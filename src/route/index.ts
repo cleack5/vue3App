@@ -25,6 +25,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'CSS',
     component: () => import('../views/css/CSS.vue'),
   },
+  {
+    path: '/windi/index',
+    name: 'windiIndex',
+    component: () => import('../views/windi/Index.vue'),
+  },
 ]
 
 const router = createRouter({
