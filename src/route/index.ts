@@ -1,11 +1,15 @@
 import {
   createRouter,
-  createWebHistory,
+  // createWebHistory,
   createWebHashHistory,
   RouteRecordRaw,
 } from 'vue-router'
 
 const routes: Array<RouteRecordRaw> = [
+  {
+    path: '/:catchAll(.*)',
+    redirect: '/',
+  },
   {
     path: '/',
     name: 'Home',
@@ -15,6 +19,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/about',
     name: 'About',
     component: () => import('../views/about/About.vue'),
+  },
+  {
+    path: '/css',
+    name: 'CSS',
+    component: () => import('../views/css/CSS.vue'),
   },
 ]
 
