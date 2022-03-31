@@ -26,6 +26,16 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('../views/css/CSS.vue'),
   },
   {
+    path: '/css/flex',
+    name: 'Flex',
+    component: () => import('../views/css/flex/Flex.vue'),
+  },
+  {
+    path: '/css/grid',
+    name: 'Grid',
+    component: () => import('../views/css/grid/Grid.vue'),
+  },
+  {
     path: '/windi/index',
     name: 'windiIndex',
     component: () => import('../views/windi/Index.vue'),
